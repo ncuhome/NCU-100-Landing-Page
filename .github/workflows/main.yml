@@ -16,8 +16,8 @@ jobs:
           accessKeySecret: ${{ secrets.ACCESSKEYSECRET }}
           bucket: xiaoqing-proxy
           exclude: |
-            .git 
-            .github
+            .git/
+            .github/
             README.md
           endpoint: oss-cn-shenzhen.aliyuncs.com
           skipSetting: true
