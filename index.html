@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>您是第 33 位为南昌大学送上祝福的人</title>
+    <script>
+      document.title = `您是第 ${Math.floor(
+        Math.random() * 1000
+      )} 位为南昌大学送上祝福的人`;
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FR5CNLNP12"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FR5CNLNP12");
+    </script>
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="main">
+      <img src="public/logo.png" class="logo" />
+      <img id="img" src="public/loading.svg" class="loading" />
+      <p class="text">南昌大学 · 家园工作室</p>
+      <div class="back"><img src="public/up.svg" class="up" />返回南大家园</div>
+    </div>
+    <div class="wrap">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <script>
+      setTimeout(() => {
+        location.href = "weixin://dl/business/?t=YpDjRbZTAdt";
+        document.getElementById("img").style.visibility = "hidden";
+      }, 1200);
+    </script>
+  </body>
+</html>
