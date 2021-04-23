@@ -6,15 +6,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      
-    - name: aliyun-oss-website-action
-      uses: fangbinwei/aliyun-oss-website-action@v1
-      with:
-        folder: "."
-        accessKeyId: ${{ secrets.ACCESSKEYID }}
-        accessKeySecret: ${{ secrets.ACCESSKEYSECRET }}
-        bucket: xiaoqing-proxy
-        exclude: .git .github README.md
-        endpoint: oss-cn-shenzhen.aliyuncs.com
-        skipSetting: true
+      - uses: actions/checkout@v2
+
+      - name: aliyun-oss-website-action
+        uses: fangbinwei/aliyun-oss-website-action@v1
+        with:
+          folder: "."
+          accessKeyId: ${{ secrets.ACCESSKEYID }}
+          accessKeySecret: ${{ secrets.ACCESSKEYSECRET }}
+          bucket: xiaoqing-proxy
+          exclude: |
+            .git 
+            .github
+            README.md
+          endpoint: oss-cn-shenzhen.aliyuncs.com
+          skipSetting: true
