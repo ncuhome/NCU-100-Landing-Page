@@ -6,6 +6,10 @@
 
 纯 HTML，简明设计，动态背景，彰显艺术（草
 
+## 部署方式
+
+本项目使用 Github Actions 进行部署，请直接在 Action Tab 中寻找并点击「Run Workflow」即可部署。
+
 ## 相关链接
 
 [项目地址](http://xiaoqing.ncuos.com)
