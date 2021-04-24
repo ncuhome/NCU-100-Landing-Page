@@ -2,40 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <!-- 移动端限制缩放 -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <title>您是第 33 位为南昌大学送上祝福的人</title>
+
+    <!-- 随机标题 -->
     <script>
       document.title = `您是第 ${Math.floor(
         Math.random() * 1000
       )} 位为南昌大学送上祝福的人`;
     </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-FR5CNLNP12"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-FR5CNLNP12");
+    <!-- CNZZ 注入代码 -->
+    <script type="text/javascript">
+      document.write(
+        unescape(
+          "%3Cspan id='cnzz_stat_icon_1279872469'%3E%3C/span%3E%3Cscript src='http://s9.cnzz.com/z_stat.php%3Fid%3D1279872469' type='text/javascript'%3E%3C/script%3E"
+        )
+      );
     </script>
     <link href="css/animate.css" rel="stylesheet" type="text/css" />
     <link href="css/base.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <!-- 基本前置样式 -->
     <div class="main">
       <img src="public/logo.png" class="logo" />
       <img id="img" src="public/loading.svg" class="loading" />
       <p class="text">南昌大学 · 家园工作室</p>
       <div class="back"><img src="public/up.svg" class="up" />返回南大家园</div>
     </div>
+
+    <!-- 动态背景 -->
     <div class="wrap">
       <ul class="circles">
         <li></li>
@@ -50,6 +52,8 @@
         <li></li>
       </ul>
     </div>
+
+    <!-- 跳转逻辑 -->
     <script>
       setTimeout(() => {
         location.href = "weixin://dl/business/?t=YpDjRbZTAdt";
